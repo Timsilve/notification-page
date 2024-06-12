@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +9,8 @@
 
 body {
     background-color:   hsl(210, 60%, 98%);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-family: 'Plus Jakarta Sans',sans-serif;
 }
 
 .container {
@@ -35,8 +39,7 @@ box-shadow: 1px 1px 15px rgba(0,0,0,0.05);
  color:   hsl(224, 21%, 14%);
 }
 
-.header a {
-    text-decoration: none;
+#mark {
     color: hsl(219, 12%, 42%);
 }
 
@@ -113,4 +116,26 @@ a.blue {
 .kimber .cont {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        font-size:16px;
+        line-height: 1.3;
+    }
+
+    .notification h4 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding:1rem
+    }
+
+    .box .hello {
+        padding: 0.5rem;
+    }
+    .box img {
+        width: 35px;
+    }
 }
